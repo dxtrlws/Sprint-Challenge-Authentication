@@ -1,0 +1,21 @@
+post http://localhost:3300/api/register
+Content-Type: application/json
+
+{
+    "username": "john",
+    "password": "123456"
+}
+
+###
+
+post http://localhost:3300/api/login
+Content-Type: application/json
+
+{
+    "username": "john",
+    "password": "123456"
+}
+
+###
+get http://localhost:3300/api/jokes
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTU2MDczMzYyOSwiZXhwIjoxNTYwNzM3MjI5fQ.qx-HmNyb_1gVp4yBWh07epa5wnoLD2e2N5U3z9UiEVs
